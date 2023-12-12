@@ -1,0 +1,135 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  font-family: monospace;
+  color: white;
+  cursor: default;
+  transition: 0.3s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.Start {
+  background: linear-gradient(rgb(21, 78, 81), rgb(22, 22, 22));
+}
+
+.Header {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.header-el {
+  position: relative;
+  width: 150px;
+  text-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  background: white;
+  color: rgb(21, 78, 81);
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.header-el:hover {
+  background: rgb(22, 22, 22);
+  color: white;
+}
+
+.Text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 50%;
+  border-radius: 25px;
+  border: 1px grey solid;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 35px;
+  margin-left: 80px;
+  text-align: justify;
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Text p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.Text h1 {
+  font-size: 50px;
+  padding-left: 10px;
+  color: rgb(209, 202, 0);
+}
+
+.Text ::selection {
+  background: rgb(103, 46, 46);
+  color: black;
+}
+
+b {
+  text-decoration: underline 5px;
+  cursor: pointer;
+}
+
+.board {
+  position: relative;
+  top: 20%;
+  left: 70%;
+}
+
+.cover {
+  background-color: rgba(54, 54, 54, 0.245);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30%;
+  left: 70%;
+  width: 300px;
+  height: 300px;
+  transition: 0;
+  font-size: 30px;
+}
+
+.cover:nth-child(odd) {
+  visibility: hidden;
+}
+
+.play {
+  color: white;
+  background-color: rgb(209, 202, 0);
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 25px;
+  top: 50%;
+  left: 80%;
+  cursor: pointer;
+  transition: 0;
+}
